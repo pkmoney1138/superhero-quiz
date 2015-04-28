@@ -2,15 +2,15 @@ body {
 	background-color: black;
 	width: 100%;
 }
-/*cover page*/
-#comic-book {
+/* cover page stylings */
+.cover-page {
 	background-color: blue;
 	border: 4px solid white;
 	width: 900px;
 	height: 1150px;
 	margin: 50px auto;
 }
-#banners {
+.banners {
 	border: 1px solid black;
 	background-color: white;
 	width: 771px;
@@ -19,12 +19,12 @@ body {
 	margin-left: 127px;
 	text-align: center;
 }
-#banners h1 {
+.banners h1 {
 	font-family: comic sans ms;
 	font-size: 40px;
 	margin-top: 2px;
 }
-#comic-code { 
+.comic-code { 
 	background-image: url(../images/comic-code2.jpg);
 	border: 1px solid white;
 	width: 80px;
@@ -33,7 +33,7 @@ body {
 	margin-right: 30px;
 	margin-top: -75px;
 }
-#thinkful {
+.thinkful {
 	background-image: url(../images/thinkful.png);
 	background-repeat: no-repeat;
 	border: 1px solid black;
@@ -42,7 +42,7 @@ body {
 	margin-top: -52px;
 	margin-left: 25px;
 }
-#price {
+.price {
 	background-image: url(../images/price.jpg);
 	border: 1px solid black;
 	width: 100px;
@@ -50,7 +50,7 @@ body {
 	margin-top: 0;
 	margin-left: 25px;
 }
-#barcode {
+.barcode {
 	background-image: url(../images/barcode.png);
 	border: 1px solid white;
 	width: 100px;
@@ -58,7 +58,7 @@ body {
 	margin-top: 590px;
 	margin-left: 25px;
 }
-#start-button {
+.start-button {
 	width: 200px;
 	height: 50px;
 	background-color: white;
@@ -69,8 +69,8 @@ body {
 	margin-top: -100px;
 	box-shadow: 5px 5px 2.5px black;
 }
-/*first-question page*/
-#question-one-page {
+/* question pages */
+.question-page {
 	background-color: blue;
 	border: 4px solid white;
 	width: 900px;
@@ -78,12 +78,16 @@ body {
 	margin: 50px auto;
 	display: block;
 }
-.question-block {
+.she-hulk-question,
+.captain-marvel-question,
+.emma-frost-question,
+.spider-woman-question {
 	border: 2px solid black;
 	width: 400px;
-	height: 400px;
+	height: 210px;
 	margin-top: 700px;
 	margin-left: 400px;
+	padding-top: 10px;
 	text-align: center;
 	font-family: comic sans ms;
 	background-color: white;
@@ -92,10 +96,11 @@ body {
 	width: 100px;
 	height: 40px;
 	background-color: white;
+	margin-top: 10px;
 	font-size: 20px;
 	font-family: comic sans ms;
-
 }
+/* CSS that creates the speech bubbles */
 .speech-bubbles {
 	position: relative;
 	width: 400px;
@@ -128,7 +133,29 @@ body {
 	border-color: #fff transparent;
 	display: block;
 }
+/* After speech bubbles created, feedback moves it around */
 .feedback {
 	margin-left: 200px;
 	margin-top: -800px;
+	font-family: comic sans ms;
 }
+.continue-button {
+	border: 1px solid gray;
+	background-color: white;
+	font-size: 20px;
+	margin-top: 50px;
+	margin-left: 300px;
+	width: 100px;
+	height: 40px;
+	font-family: comic sans ms;
+	box-shadow: 5px 5px 2.5px black;
+}
+/* last page */
+.last-page {
+	background-color: blue;
+	border: 4px solid white;
+	width: 900px;
+	height: 1150px;
+	margin: 50px auto;
+}
+
