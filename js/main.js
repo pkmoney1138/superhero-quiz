@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	//quiz question array
-	var game-questions = [{
+	var gameQuestions = [{
 		question: "Jennifer Walters a.k.a She-Hulk is related to what famous Marvel character?",
 		choices: ["Peter Parker", "Reed Richards", "Bruce Banner", "Richard Rider"],
 		questNumb: 0,
