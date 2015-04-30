@@ -285,11 +285,17 @@ body {
 }
 /* last page */
 .last-page {
+	background-image: url(../images/iron-man.gif);
 	background-color: blue;
 	border: 4px solid white;
 	width: 900px;
 	height: 1150px;
 	margin: 50px auto;
+}
+.last-page p {
+	text-align: center;
+	padding-top: 40px;
+	font-size: 40px;
 }
 .results {
 	border: 2px solid black;
