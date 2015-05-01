@@ -29,6 +29,32 @@ $(document).ready(function() {
 		console.log('click');
 		$('.cover-page').hide();
 		$('.she-hulk-page').show();
-	})
-
+	});
+	$('.she-hulk-question .answer-buttons').on('click', function() {
+		console.log('click');
+		$('.she-hulk-answers').show();
+	});
+	$('.she-hulk-bubbles .continue-buttons').on('click', function() {
+		console.log('click');
+		$('.she-hulk-page').hide();
+		$('.captain-marvel-page').show();
+	});
+	$('.captain-marvel-question .answer-buttons').on('click', function() {
+		console.log('click');
+		$('.captain-marvel-answers').show();
+	});
+	$('.captain-marvel-bubbles .continue-buttons').on('click', function() {
+		console.log('click');
+		$('.captain-marvel-page').hide();
+		$('.emma-frost-page').show();
+	});
+	$('.emma-frost-question .answer-buttons').on('click', function() {
+		console.log('click');
+		$('.emma-frost-answers').show();
+	});
+	$('.emma-frost-bubbles .continue-buttons').on('click', function() {
+		console.log('click');
+		$('.emma-frost-page').hide();
+		$('.spider-woman-page').show();
+	});
 })
