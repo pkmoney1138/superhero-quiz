@@ -82,18 +82,22 @@ body {
 	background-image: url(../images/she-hulk-original.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	position: relative;
 }
 .captain-marvel-page {
 	background-image: url(../images/captain-marvel.jpg);
 	background-position: center;
+	position: relative;
 }
 .emma-frost-page {
 	background-image: url(../images/emma-frost.jpg);
 	background-position: center;
+	position: relative;	
 }
 .spider-woman-page {
 	background-image: url(../images/spider-woman.jpg);
 	background-position: center;
+	position: relative;
 }
 .she-hulk-question,
 .captain-marvel-question,
@@ -101,9 +105,10 @@ body {
 	border: 2px solid black;
 	width: 400px;
 	height: 215px;
-	margin-top: 700px;
-	margin-left: 400px;
+	top: 700px;
+	left: 400px;
 	padding-top: 10px;
+	position: absolute;
 	text-align: center;
 	background-color: white;
 }
@@ -116,6 +121,7 @@ body {
 	padding-top: 10px;
 	text-align: center;
 	background-color: white;
+	position: absolute;
 }
 .answer-buttons {
 	width: 100px;
@@ -238,7 +244,7 @@ body {
 .spider-woman-bubbles:before {
 	content: "";
 	position: absolute;
-	bottom: 140px;
+	bottom: 138px;
 	right: 30px;
 	border-width: 0px 35px 35px 35px;
 	border-style: solid;
@@ -255,32 +261,35 @@ body {
 	border-color: #fff transparent;
 	display: block;
 }
-.spider-woman-bubbles form {
-	margin-top: 5px;
-}
-/* After captain-marvel bubbles created, feedback moves it around */
+/* After bubbles created, answers moves it around */
 .she-hulk-answers {
-	margin-left: 315px;
-	margin-top: -945px;
+	left: 315px;
+	position: absolute;
 }
 .captain-marvel-answers {
-	margin-left: 350px;
-	margin-top: -940px;
+	left: 350px; 
 	border: blue;
+	position: absolute;
 }
 .emma-frost-answers {
-	margin-left: 340px;
-	margin-top: -945px;
+	left: 340px;
+	position: absolute;
+	
+}
+.spider-woman-answers {
+	top: 900px;
+	left: -20px;
+	position: absolute;
 }
 .continue-buttons {
 	border: 1px solid gray;
 	background-color: white;
 	font-size: 20px;
+	font-family: comic sans ms;
 	margin-top: 10px;
 	margin-left: 300px;
 	width: 100px;
 	height: 40px;
-	font-family: comic sans ms;
 	box-shadow: 5px 5px 2.5px black;
 }
 /* last page */
