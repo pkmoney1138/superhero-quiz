@@ -51,7 +51,7 @@ $(document).ready(function() {
 	$('.she-hulk-question .answer-buttons').on('click', function() {
 		console.log('click1');
 		questionAnswers();		
-		$('#she-hulk-correct').fadeIn();
+		$('.she-hulk-answers').fadeIn();
 		$('.she-hulk-question').fadeOut();
 	});
 	$('.she-hulk-bubbles .continue-buttons').on('click', function() {
