@@ -150,7 +150,7 @@ $(document).ready(function() {
 		$('.spider-woman-answers').fadeIn();
 		if(answers == gameQuestions[currentQuestion].correct) {
 			$('.spider-woman-question').fadeOut();
-			$('.spider-woman-bubbles p').text("Named after Wolverine's daughter and Nancy Drew, I've survived and overcome series cancellations and usurpers to my name only to remain the one, true Spider-Woman!")
+			$('.spider-woman-bubbles p').text("Named after Wolverine's daughter and Nancy Drew, I've survived series cancellations and overcome usurpers to my name only to remain the one, true Spider-Woman!")
 			numbCorrect++;
 		}
 		else if(answers == 0) {

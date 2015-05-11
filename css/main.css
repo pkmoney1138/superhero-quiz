@@ -1,7 +1,7 @@
 body {
 	background-color: black;
 	width: 100%;
-	font-family: comic sans ms
+	font-family: "Comic Sans ms", Serif 
 }
 /* cover page stylings */
 .cover-page {
@@ -13,67 +13,78 @@ body {
 	margin: 50px auto;
 }
 .banners {
-	border: 1px solid black;
+	position: relative;
+	border: 2px solid black;
 	background-color: white;
 	width: 771px;
 	height: 50px;
-	margin-top: 30px;
-	margin-left: 127px;
+	top: 30px;
+	left: 127px;
 	text-align: center;
 }
 .banners h1 {
 	font-size: 40px;
 	margin-top: 2px;
 }
-.comic-code { 
+.comic-code {
+	position: relative; 
 	background-image: url(../images/comic-code2.jpg);
 	border: 1px solid white;
 	width: 80px;
 	height: 97px;
-	float: right;
-	margin-right: 30px;
-	margin-top: -75px;
+	right: -800px;
+	top: -45px;
 }
 .thinkful {
+	position: relative;
 	background-image: url(../images/thinkful.png);
 	background-repeat: no-repeat;
-	border: 1px solid black;
+	border: 2px solid black;
 	width: 100px;
 	height: 200px;
-	margin-top: -52px;
-	margin-left: 25px;
+	top: -123px;
+	left: 25px;
 }
 .price {
+	position: relative;
 	background-image: url(../images/price.jpg);
-	border: 1px solid black;
+	border: 2px solid black;
 	width: 100px;
 	height: 50px;
-	margin-top: 0;
-	margin-left: 25px;
+	top: -125px;
+	left: 25px;
 }
 .barcode {
+	position: relative;
 	background-image: url(../images/barcode.png);
-	border: 1px solid white;
+	border: 1px solid black;
 	width: 100px;
 	height: 200px;
-	margin-top: 590px;
-	margin-left: 25px;
+	top: 480px;
+	left: 25px;
 }
 .start-button {
-	border: solid 1px white;
+	position: relative;
+	border: solid 1px black;
 	width: 200px;
 	height: 50px;
 	background-color: white;
 	font-size: 20px;
 	font-family: comic sans ms;
-	float: right;
-	margin-right: 50px;
-	margin-top: -30px;
+	right: -630px;
+	bottom: -440px;
 	box-shadow: 5px 5px 2.5px black;
+	-webkit-transition: background 1s ease-in-out, color 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out, color 1s ease-in-out;
+	-ms-transition: background 1s ease-in-out, color 1s ease-in-out;
+	-o-transition: background 1s ease-in-out, color 1s ease-in-out;
+	transition: background 1s ease-in-out, color 1s ease-in-out;
 }
 .start-button:hover {
 	background-color: blue;
 	cursor: pointer;
+	color: white;
+
 }
 /* question pages */
 .question-pages {
@@ -81,7 +92,6 @@ body {
 	width: 900px;
 	height: 1150px;
 	margin: 50px auto;
-	display: block;
 }
 .she-hulk-page {
 	background-image: url(../images/she-hulk-original.jpg);
@@ -113,7 +123,7 @@ body {
 	top: 700px;
 	left: 400px;
 	padding-top: 10px;
-	position: absolute;
+	position: relative;
 	text-align: center;
 	background-color: white;
 }
@@ -121,27 +131,54 @@ body {
 	border: 2px solid black;
 	width: 400px;
 	height: 210px;
-	margin-top: 700px;
-	margin-left: 485px;
+	top: 720px;
+	left: 490px;
 	padding-top: 10px;
 	text-align: center;
 	background-color: white;
-	position: absolute;
+	position: relative;
 }
 .answer-buttons {
+	position: absolute;
 	width: 100px;
 	height: 40px;
 	background-color: white;
-	margin-top: 10px;
+	top: 165px;
+	left: 150px;
 	font-size: 20px;
 	font-family: comic sans ms;
 	box-shadow: 5px 5px 2.5px black;
 }
 .answer-buttons:hover {
 	cursor: pointer;
+	-webkit-transition: background linear, color linear;
+	-moz-transition: background linear, color linear;
+	-ms-transition: background linear, color linear;
+	-o-transition: background linear, color linear;
+	transition: background linear, color linear;
 }
-/* captain-marvel bubbles */
-.she-hulk-bubbles {
+.she-hulk-question .answer-buttons:hover {	
+	color: purple;
+	background-color: green;
+}
+.captain-marvel-question .answer-buttons:hover {
+	color: red;
+	background-color: yellow;
+}
+.emma-frost-question .answer-buttons {
+	top: 170px;
+}
+.emma-frost-question .answer-buttons:hover {
+	color: white;
+	background-color: gray;
+}
+.spider-woman-question .answer-buttons:hover {
+	color: yellow;
+	background-color: red;
+}
+
+/* talk bubbles */
+.general-bubbles {  
 	position: relative; 
 	width: 400px; 
 	background: #fff; 
@@ -153,7 +190,7 @@ body {
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 }
-.she-hulk-bubbles:before {
+.general-bubbles:before {
 	content: "";
 	position: absolute; 
 	bottom: -35px; 
@@ -163,7 +200,7 @@ body {
 	border-color: #7e527f transparent; 
 	display: block;
 }
-.she-hulk-bubbles:after {
+.general-bubbles:after {
 	content: "";
 	position: absolute; 
 	bottom: -20px; 
@@ -174,68 +211,16 @@ body {
 	display: block;
 }
 .captain-marvel-bubbles {
-	position: relative; 
-	width: 400px; 
-	background: #fff; 
-	padding: 15px;
-	margin: 20px 0 40px 40px;
-	color: #333;
 	border: 10px solid blue;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
 }
 .captain-marvel-bubbles:before {
-	content: "";
-	position: absolute; 
-	bottom: -35px; 
-	left: 30px; 
-	border-width: 35px 35px 0 35px; 
-	border-style: solid;
 	border-color: blue transparent; 
-	display: block;
-}
-.captain-marvel-bubbles:after {
-	content: "";
-	position: absolute; 
-	bottom: -20px; 
-	left: 45px;  
-	border-width: 20px 20px 0 20px;
-	border-style: solid;
-	border-color: #fff transparent;
-	display: block;
 }
 .emma-frost-bubbles {
-	position: relative; 
-	width: 400px; 
-	background: #fff; 
-	padding: 15px;
-	margin: 20px 0 40px 40px;
-	color: #333;
 	border: 10px solid gray;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
 }
 .emma-frost-bubbles:before {
-	content: "";
-	position: absolute; 
-	bottom: -35px; 
-	left: 30px; 
-	border-width: 35px 35px 0 35px; 
-	border-style: solid;
 	border-color: gray transparent; 
-	display: block;
-}
-.emma-frost-bubbles:after {
-	content: "";
-	position: absolute; 
-	bottom: -20px; 
-	left: 45px;  
-	border-width: 20px 20px 0 20px;
-	border-style: solid;
-	border-color: #fff transparent;
-	display: block;
 }
 .spider-woman-bubbles {
 	position: relative;
@@ -269,20 +254,22 @@ body {
 	border-color: #fff transparent;
 	display: block;
 }
-/* After bubbles created, answers moves it around */
+/* answers move the bubbles around */
 .she-hulk-answers {
-	left: 315px;
 	position: absolute;
+	top: 0px;
+	left: 315px;
 }
 .captain-marvel-answers {
+	position: absolute;
+	top: 0px;
 	left: 350px; 
 	border: blue;
-	position: absolute;
 }
-.emma-frost-answers {
-	left: 340px;
+.emma-frost-answers {	
 	position: absolute;
-	
+	top: 0px;
+	left: 340px;
 }
 .spider-woman-answers {
 	top: 900px;
@@ -302,6 +289,27 @@ body {
 }
 .continue-buttons:hover {
 	cursor: pointer;
+	-webkit-transition: background linear, color linear;
+	-moz-transition: background linear, color linear;
+	-ms-transition: background linear, color linear;
+	-o-transition: background linear, color linear;
+	transition: background linear, color linear;
+}
+.she-hulk-answers .continue-buttons:hover {
+	background-color: green;
+	color: purple;
+}
+.captain-marvel-answers .continue-buttons:hover {
+	background-color: yellow;
+	color: red ;
+}
+.emma-frost-answers .continue-buttons:hover {
+	background-color: gray;
+	color: white;
+}
+.spider-woman-answers .continue-buttons:hover {
+	background-color: red ;
+	color: yellow;
 }
 /* last page */
 .last-page {
