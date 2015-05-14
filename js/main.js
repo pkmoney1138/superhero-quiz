@@ -29,25 +29,13 @@ $(document).ready(function() {
 	//global variables
 	var numbCorrect = 0;
 	var currentQuestion = 0;
-	
-	//functions
-	function questionAnswers() {
-		var answers = $("input[type='radio']:checked").val();
-		if(answers == gameQuestions[currentQuestion].correct) {
-			console.log('correct');
-			numbCorrect++;
-		}
-		else {
-			console.log('not correct');
-		};
-		$("input[type='radio']").removeAttr("checked");
-	};
-	//buttons
+	//begin game
 	$('.start-button').on('click', function() {
 		console.log('click');
 		$('.cover-page').hide();
 		$('.she-hulk-page').show();
 	});
+	//she-hulk page
 	$('.she-hulk-question .answer-buttons').on('click', function() {
 		console.log('click1');
 		var answers = $("input[type='radio']:checked").val();
@@ -72,6 +60,7 @@ $(document).ready(function() {
 		else {
 			$('.she-hulk-bubbles p').text("How about actually choosing an answer?")
 		};
+		//removes checked answer 
 		$("input[type='radio']").removeAttr("checked");
 	});
 	$('.she-hulk-bubbles .continue-buttons').on('click', function() {
@@ -80,6 +69,7 @@ $(document).ready(function() {
 		$('.captain-marvel-page').show();
 		currentQuestion++;
 	});
+	//captain-marvel page
 	$('.captain-marvel-question .answer-buttons').on('click', function() {
 		console.log('click2');
 		var answers = $("input[type='radio']:checked").val();
@@ -112,6 +102,7 @@ $(document).ready(function() {
 		$('.emma-frost-page').show();
 		currentQuestion++;
 	});
+	//emma-frost page
 	$('.emma-frost-question .answer-buttons').on('click', function() {
 		console.log('click3');
 		var answers = $("input[type='radio']:checked").val();
@@ -144,6 +135,7 @@ $(document).ready(function() {
 		$('.spider-woman-page').show();
 		currentQuestion++;
 	});
+	//spider-woman page
 	$('.spider-woman-question .answer-buttons').on('click', function() {
 		console.log('click4');
 		var answers = $("input[type='radio']:checked").val();
@@ -175,5 +167,10 @@ $(document).ready(function() {
 		$('.spider-woman-page').hide();
 		$('.results p').html("Congratulations! <br> You finished the quiz and got " + numbCorrect + " out of 4 questions correct!")
 		$('.last-page').show();
+	});
+	//last-page 
+	$('.start-again-button').on('click', function() {
+		console.log('click 5');
+		location.reload();
 	});
 })

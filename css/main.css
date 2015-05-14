@@ -74,11 +74,11 @@ body {
 	right: -630px;
 	bottom: -440px;
 	box-shadow: 5px 5px 2.5px black;
-	-webkit-transition: background 1s ease-in-out, color 1s ease-in-out;
-	-moz-transition: background 1s ease-in-out, color 1s ease-in-out;
-	-ms-transition: background 1s ease-in-out, color 1s ease-in-out;
-	-o-transition: background 1s ease-in-out, color 1s ease-in-out;
-	transition: background 1s ease-in-out, color 1s ease-in-out;
+	-webkit-transition: background linear, color linear;
+	-moz-transition: background linear, color linear;
+	-ms-transition: background linear, color linear;
+	-o-transition: background linear, color linear;
+	transition: background linear, color linear;
 }
 .start-button:hover {
 	background-color: blue;
@@ -98,25 +98,27 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
+	display: none;
 }
 .captain-marvel-page {
 	background-image: url(../images/captain-marvel.jpg);
 	background-position: center;
 	position: relative;
+	display: none;
 }
 .emma-frost-page {
 	background-image: url(../images/emma-frost.jpg);
 	background-position: center;
-	position: relative;	
+	position: relative;
+	display: none;
 }
 .spider-woman-page {
 	background-image: url(../images/spider-woman.jpg);
 	background-position: center;
 	position: relative;
+	display: none;
 }
-.she-hulk-question,
-.captain-marvel-question,
-.emma-frost-question {
+.general-question {
 	border: 2px solid black;
 	width: 400px;
 	height: 215px;
@@ -128,15 +130,9 @@ body {
 	background-color: white;
 }
 .spider-woman-question {
-	border: 2px solid black;
-	width: 400px;
 	height: 210px;
 	top: 720px;
 	left: 490px;
-	padding-top: 10px;
-	text-align: center;
-	background-color: white;
-	position: relative;
 }
 .answer-buttons {
 	position: absolute;
@@ -259,22 +255,26 @@ body {
 	position: absolute;
 	top: 0px;
 	left: 315px;
+	display: none;
 }
 .captain-marvel-answers {
 	position: absolute;
-	top: 0px;
+	top: -14px;
 	left: 350px; 
 	border: blue;
+	display: none;
 }
 .emma-frost-answers {	
 	position: absolute;
 	top: 0px;
 	left: 340px;
+	display: none;
 }
 .spider-woman-answers {
 	top: 900px;
 	left: -20px;
 	position: absolute;
+	display: none;
 }
 .continue-buttons {
 	border: 1px solid gray;
@@ -320,6 +320,7 @@ body {
 	width: 900px;
 	height: 1150px;
 	margin: 50px auto;
+	display: none;
 }
 .results {
 	position: absolute;
@@ -346,7 +347,14 @@ body {
 	right: 100px;
 	bottom: 150px;
 	box-shadow: 5px 5px 2.5px black;
+	-webkit-transition: background linear, color linear;
+	-moz-transition: background linear, color linear;
+	-ms-transition: background linear, color linear;
+	-o-transition: background linear, color linear;
+	transition: background linear, color linear;
 }
 .start-again-button:hover {
 	cursor: pointer;
+	background-color: blue;
+	color: white;
 }
